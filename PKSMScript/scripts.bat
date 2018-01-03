@@ -199,6 +199,7 @@
 
 @rem PT SCRIPTS
 @py -3 PKSMScript.py "Clear Mystery Gift data" -i 0xB4C0 1 0x0 2336
+@py -3 PKSMScript.py "Give all items 99x" -i 0x630 648 "data/Pt_AllItems.bin" 1
 
 @mkdir pt
 @move /Y *.pksm pt
