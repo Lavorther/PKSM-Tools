@@ -19,7 +19,7 @@ Copyright (C) 2017 Bernardo Giordano
 
 #pragma once
 
-#include "../../common/pp2d/pp2d.h"
+#include "pp2d/pp2d.h"
 
 #define WARNINGTOP 1
 #define WARNINGBOTTOM 2
@@ -48,6 +48,7 @@ extern "C" {
 void GUIElementsInit();
 void gameSelectorMenu(int n);
 void infoDisp(const char* message);
+int confirmDisp();
 void freezeMsg(const char* message);
 #ifdef __cplusplus
 }

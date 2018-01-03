@@ -9,7 +9,7 @@
 @py -3 PKSMScript.py "Save language to CHS" -i 0x1435 1 0x9 1
 @py -3 PKSMScript.py "Save language to CHT" -i 0x1435 1 0xA 1
 @py -3 PKSMScript.py "Clear Mystery Gift data" -i 0x66200 1 0x0 12928
-@py -3 PKSMScript.py "Set max money" -i 0x4400 4 9999999 1
+@py -3 PKSMScript.py "Set max money" -i 0x4404 4 9999999 1
 @py -3 PKSMScript.py "Inject living dex" -i 0x5200 186992 "data/living7.bin" 1
 @py -3 PKSMScript.py "Set max Battle Points" -i 0x0451C 4 9999 1
 @py -3 PKSMScript.py "Set max Festival Coins" -i 0x51308 4 9999999 1
@@ -76,8 +76,8 @@
 @py -3 PKSMScript.py "Save language to CHS" -i 0x1235 1 0x9 1
 @py -3 PKSMScript.py "Save language to CHT" -i 0x1235 1 0xA 1
 @py -3 PKSMScript.py "Clear Mystery Gift data" -i 0x65C00 1 0x0 12928
-@py -3 PKSMScript.py "Set max money" -i 0x4000 4 9999999 1
-@py -3 PKSMScript.py "Inject living dex" -i 0x4E00 186992 "data/living7.bin" 1
+@py -3 PKSMScript.py "Set max money" -i 0x4004 4 9999999 1
+@py -3 PKSMScript.py "Inject living dex" -i 0x4E00 186064 "data/living7.bin" 1
 @py -3 PKSMScript.py "Set max Battle Points" -i 0x0411C 4 9999 1
 @py -3 PKSMScript.py "Set max Festival Coins" -i 0x50D08 4 9999999 1
 @py -3 PKSMScript.py "Set max Camera Shots" -i 0x65004 4 9999999 1
@@ -90,7 +90,7 @@
 @py -3 PKSMScript.py "All TMs Owned" -i 0x998 400 "data/SM_AllTM.bin" 1
 @py -3 PKSMScript.py "All Z-Crystals Owned" -i 0xD68 116 "data/SM_AllZCrystals.bin" 1
 
-@py -3 PKSMScript.py "Set Vivillon Icy Snow form form" -i 0x4130 1 0 1
+@py -3 PKSMScript.py "Set Vivillon Icy Snow form" -i 0x4130 1 0 1
 @py -3 PKSMScript.py "Set Vivillon Polar form" -i 0x4130 1 1 1
 @py -3 PKSMScript.py "Set Vivillon Tundra form" -i 0x4130 1 2 1
 @py -3 PKSMScript.py "Set Vivillon Continental form" -i 0x4130 1 3 1
@@ -135,6 +135,27 @@
 @py -3 PKSMScript.py "Give all medicines 99x" -i 0xD70 216 "data\ORAS_AllMedicines.bin" 1
 @py -3 PKSMScript.py "All TMs and HMs owned" -i 0xBC0 428 "data\ORAS_AllTMHM.bin" 1
 
+@py -3 PKSMScript.py "Set Vivillon Icy Snow form" -i 0x4244 1 0 1
+@py -3 PKSMScript.py "Set Vivillon Polar form" -i 0x4244 1 1 1
+@py -3 PKSMScript.py "Set Vivillon Tundra form" -i 0x4244 1 2 1
+@py -3 PKSMScript.py "Set Vivillon Continental form" -i 0x4244 1 3 1
+@py -3 PKSMScript.py "Set Vivillon Garden form" -i 0x4244 1 4 1
+@py -3 PKSMScript.py "Set Vivillon Elegant form" -i 0x4244 1 5 1
+@py -3 PKSMScript.py "Set Vivillon Meadow form" -i 0x4244 1 6 1
+@py -3 PKSMScript.py "Set Vivillon Modern form" -i 0x4244 1 7 1
+@py -3 PKSMScript.py "Set Vivillon Marine form" -i 0x4244 1 8 1
+@py -3 PKSMScript.py "Set Vivillon Archipelago form" -i 0x4244 1 9 1
+@py -3 PKSMScript.py "Set Vivillon High-Plains form" -i 0x4244 1 10 1
+@py -3 PKSMScript.py "Set Vivillon Sandstorm form" -i 0x4244 1 11 1
+@py -3 PKSMScript.py "Set Vivillon River form" -i 0x4244 1 12 1
+@py -3 PKSMScript.py "Set Vivillon Monsoon form" -i 0x4244 1 13 1
+@py -3 PKSMScript.py "Set Vivillon Savannah form" -i 0x4244 1 14 1
+@py -3 PKSMScript.py "Set Vivillon Sun form" -i 0x4244 1 15 1
+@py -3 PKSMScript.py "Set Vivillon Ocean form" -i 0x4244 1 16 1
+@py -3 PKSMScript.py "Set Vivillon Jungle form" -i 0x4244 1 17 1
+@py -3 PKSMScript.py "Set Vivillon Fancy form" -i 0x4244 1 18 1
+@py -3 PKSMScript.py "Set Vivillon Pokeball form" -i 0x4244 1 19 1
+
 @mkdir oras
 @move /Y *.pksm oras
 
@@ -159,13 +180,34 @@
 @py -3 PKSMScript.py "Give all medicines 99x" -i 0xD68 204 "data\XY_AllMedicines.bin" 1
 @py -3 PKSMScript.py "All TMs and HMs owned" -i 0xBC0 420 "data\XY_AllTMHM.bin" 1
 
+@py -3 PKSMScript.py "Set Vivillon Icy Snow form" -i 0x4250 1 0 1
+@py -3 PKSMScript.py "Set Vivillon Polar form" -i 0x4250 1 1 1
+@py -3 PKSMScript.py "Set Vivillon Tundra form" -i 0x4250 1 2 1
+@py -3 PKSMScript.py "Set Vivillon Continental form" -i 0x4250 1 3 1
+@py -3 PKSMScript.py "Set Vivillon Garden form" -i 0x4250 1 4 1
+@py -3 PKSMScript.py "Set Vivillon Elegant form" -i 0x4250 1 5 1
+@py -3 PKSMScript.py "Set Vivillon Meadow form" -i 0x4250 1 6 1
+@py -3 PKSMScript.py "Set Vivillon Modern form" -i 0x4250 1 7 1
+@py -3 PKSMScript.py "Set Vivillon Marine form" -i 0x4250 1 8 1
+@py -3 PKSMScript.py "Set Vivillon Archipelago form" -i 0x4250 1 9 1
+@py -3 PKSMScript.py "Set Vivillon High-Plains form" -i 0x4250 1 10 1
+@py -3 PKSMScript.py "Set Vivillon Sandstorm form" -i 0x4250 1 11 1
+@py -3 PKSMScript.py "Set Vivillon River form" -i 0x4250 1 12 1
+@py -3 PKSMScript.py "Set Vivillon Monsoon form" -i 0x4250 1 13 1
+@py -3 PKSMScript.py "Set Vivillon Savannah form" -i 0x4250 1 14 1
+@py -3 PKSMScript.py "Set Vivillon Sun form" -i 0x4250 1 15 1
+@py -3 PKSMScript.py "Set Vivillon Ocean form" -i 0x4250 1 16 1
+@py -3 PKSMScript.py "Set Vivillon Jungle form" -i 0x4250 1 17 1
+@py -3 PKSMScript.py "Set Vivillon Fancy form" -i 0x4250 1 18 1
+@py -3 PKSMScript.py "Set Vivillon Pokeball form" -i 0x4250 1 19 1
+
 @mkdir xy
 @move /Y *.pksm xy
 
 @rem B2W2 SCRIPTS
 @py -3 PKSMScript.py "Clear Mystery Gift data" -i 0x1C800 1 0x0 2704
 @py -3 PKSMScript.py "Set max money" -i 0x21100 4 9999999 1
-@py -3 PKSMScript.py "Inject living dex" -i 0x00400 4080 "data/living5/boxdata BOX 1.bin" 1 -i 0x01400 4080 "data/living5/boxdata BOX 2.bin" 1 -i 0x02400 4080 "data/living5/boxdata BOX 3.bin" 1 -i 0x03400 4080 "data/living5/boxdata BOX 4.bin" 1 -i 0x04400 4080 "data/living5/boxdata BOX 5.bin" 1 -i 0x05400 4080 "data/living5/boxdata BOX 6.bin" 1 -i 0x06400 4080 "data/living5/boxdata BOX 7.bin" 1 -i 0x07400 4080 "data/living5/boxdata BOX 8.bin" 1 -i 0x08400 4080 "data/living5/boxdata BOX 9.bin" 1 -i 0x09400 4080 "data/living5/boxdata BOX 10.bin" 1 -i 0x0A400 4080 "data/living5/boxdata BOX 11.bin" 1 -i 0x0B400 4080 "data/living5/boxdata BOX 12.bin" 1 -i 0x0C400 4080 "data/living5/boxdata BOX 13.bin" 1 -i 0x0D400 4080 "data/living5/boxdata BOX 14.bin" 1 -i 0x0E400 4080 "data/living5/boxdata BOX 15.bin" 1 -i 0x0F400 4080 "data/living5/boxdata BOX 16.bin" 1 -i 0x10400 4080 "data/living5/boxdata BOX 17.bin" 1 -i 0x11400 4080 "data/living5/boxdata BOX 18.bin" 1 -i 0x12400 4080 "data/living5/boxdata BOX 19.bin" 1 -i 0x13400 4080 "data/living5/boxdata BOX 20.bin" 1 -i 0x14400 4080 "data/living5/boxdata BOX 21.bin" 1 -i 0x15400 4080 "data/living5/boxdata BOX 22.bin" 1 -i 0x16400 4080 "data/living5/boxdata BOX 23.bin" 1 -i 0x17400 4080 "data/living5/boxdata BOX 24.bin" 1 
+@py -3 PKSMScript.py "Inject living dex" -i 0x00400 4080 "data/living5/boxdata BOX 1.bin" 1 -i 0x01400 4080 "data/living5/boxdata BOX 2.bin" 1 -i 0x02400 4080 "data/living5/boxdata BOX 3.bin" 1 -i 0x03400 4080 "data/living5/boxdata BOX 4.bin" 1 -i 0x04400 4080 "data/living5/boxdata BOX 5.bin" 1 -i 0x05400 4080 "data/living5/boxdata BOX 6.bin" 1 -i 0x06400 4080 "data/living5/boxdata BOX 7.bin" 1 -i 0x07400 4080 "data/living5/boxdata BOX 8.bin" 1 -i 0x08400 4080 "data/living5/boxdata BOX 9.bin" 1 -i 0x09400 4080 "data/living5/boxdata BOX 10.bin" 1 -i 0x0A400 4080 "data/living5/boxdata BOX 11.bin" 1 -i 0x0B400 4080 "data/living5/boxdata BOX 12.bin" 1 -i 0x0C400 4080 "data/living5/boxdata BOX 13.bin" 1 -i 0x0D400 4080 "data/living5/boxdata BOX 14.bin" 1 -i 0x0E400 4080 "data/living5/boxdata BOX 15.bin" 1 -i 0x0F400 4080 "data/living5/boxdata BOX 16.bin" 1 -i 0x10400 4080 "data/living5/boxdata BOX 17.bin" 1 -i 0x11400 4080 "data/living5/boxdata BOX 18.bin" 1 -i 0x12400 4080 "data/living5/boxdata BOX 19.bin" 1 -i 0x13400 4080 "data/living5/boxdata BOX 20.bin" 1 -i 0x14400 4080 "data/living5/boxdata BOX 21.bin" 1 -i 0x15400 4080 "data/living5/boxdata BOX 22.bin" 1 -i 0x16400 4080 "data/living5/boxdata BOX 23.bin" 1 -i 0x17400 4080 "data/living5/boxdata BOX 24.bin" 1
 @py -3 PKSMScript.py "Set max Battle Points" -i 0x21B00 2 9999 1
 
 @mkdir b2w2
@@ -174,7 +216,7 @@
 @rem BW SCRIPTS
 @py -3 PKSMScript.py "Clear Mystery Gift data" -i 0x1C800 1 0x0 2704
 @py -3 PKSMScript.py "Set max money" -i 0x21200 4 9999999 1
-@py -3 PKSMScript.py "Inject living dex" -i 0x00400 4080 "data/living5/boxdata BOX 1.bin" 1 -i 0x01400 4080 "data/living5/boxdata BOX 2.bin" 1 -i 0x02400 4080 "data/living5/boxdata BOX 3.bin" 1 -i 0x03400 4080 "data/living5/boxdata BOX 4.bin" 1 -i 0x04400 4080 "data/living5/boxdata BOX 5.bin" 1 -i 0x05400 4080 "data/living5/boxdata BOX 6.bin" 1 -i 0x06400 4080 "data/living5/boxdata BOX 7.bin" 1 -i 0x07400 4080 "data/living5/boxdata BOX 8.bin" 1 -i 0x08400 4080 "data/living5/boxdata BOX 9.bin" 1 -i 0x09400 4080 "data/living5/boxdata BOX 10.bin" 1 -i 0x0A400 4080 "data/living5/boxdata BOX 11.bin" 1 -i 0x0B400 4080 "data/living5/boxdata BOX 12.bin" 1 -i 0x0C400 4080 "data/living5/boxdata BOX 13.bin" 1 -i 0x0D400 4080 "data/living5/boxdata BOX 14.bin" 1 -i 0x0E400 4080 "data/living5/boxdata BOX 15.bin" 1 -i 0x0F400 4080 "data/living5/boxdata BOX 16.bin" 1 -i 0x10400 4080 "data/living5/boxdata BOX 17.bin" 1 -i 0x11400 4080 "data/living5/boxdata BOX 18.bin" 1 -i 0x12400 4080 "data/living5/boxdata BOX 19.bin" 1 -i 0x13400 4080 "data/living5/boxdata BOX 20.bin" 1 -i 0x14400 4080 "data/living5/boxdata BOX 21.bin" 1 -i 0x15400 4080 "data/living5/boxdata BOX 22.bin" 1 -i 0x16400 4080 "data/living5/boxdata BOX 23.bin" 1 -i 0x17400 4080 "data/living5/boxdata BOX 24.bin" 1 
+@py -3 PKSMScript.py "Inject living dex" -i 0x00400 4080 "data/living5/boxdata BOX 1.bin" 1 -i 0x01400 4080 "data/living5/boxdata BOX 2.bin" 1 -i 0x02400 4080 "data/living5/boxdata BOX 3.bin" 1 -i 0x03400 4080 "data/living5/boxdata BOX 4.bin" 1 -i 0x04400 4080 "data/living5/boxdata BOX 5.bin" 1 -i 0x05400 4080 "data/living5/boxdata BOX 6.bin" 1 -i 0x06400 4080 "data/living5/boxdata BOX 7.bin" 1 -i 0x07400 4080 "data/living5/boxdata BOX 8.bin" 1 -i 0x08400 4080 "data/living5/boxdata BOX 9.bin" 1 -i 0x09400 4080 "data/living5/boxdata BOX 10.bin" 1 -i 0x0A400 4080 "data/living5/boxdata BOX 11.bin" 1 -i 0x0B400 4080 "data/living5/boxdata BOX 12.bin" 1 -i 0x0C400 4080 "data/living5/boxdata BOX 13.bin" 1 -i 0x0D400 4080 "data/living5/boxdata BOX 14.bin" 1 -i 0x0E400 4080 "data/living5/boxdata BOX 15.bin" 1 -i 0x0F400 4080 "data/living5/boxdata BOX 16.bin" 1 -i 0x10400 4080 "data/living5/boxdata BOX 17.bin" 1 -i 0x11400 4080 "data/living5/boxdata BOX 18.bin" 1 -i 0x12400 4080 "data/living5/boxdata BOX 19.bin" 1 -i 0x13400 4080 "data/living5/boxdata BOX 20.bin" 1 -i 0x14400 4080 "data/living5/boxdata BOX 21.bin" 1 -i 0x15400 4080 "data/living5/boxdata BOX 22.bin" 1 -i 0x16400 4080 "data/living5/boxdata BOX 23.bin" 1 -i 0x17400 4080 "data/living5/boxdata BOX 24.bin" 1
 @py -3 PKSMScript.py "Set max Battle Points" -i 0x21D00 2 9999 1
 
 @mkdir bw
@@ -192,14 +234,24 @@
 @py -3 PKSMScript.py "Give all TM&HM 99x" -i 0x9A0 400 "data\HGSS_AllTMHM.bin" 1
 @py -3 PKSMScript.py "Give all pokeballs 99x" -i 0xD04 96 "data\HGSS_AllPokeballs.bin" 1
 @py -3 PKSMScript.py "Give all Apricorns 99x" -i 0xE558 1 99 7
-@py -3 PKSMScript.py "Unlock all Pokewalker Courses" -i 0xE70C 1 0xFF 3 -i 0xE70F 1 0x7F 1
+@py -3 PKSMScript.py "Unlock all Pokewalker Courses" -i 0xE70C 1 0xFF 3 -i 0xE70F 1 0x07 1
+@py -3 PKSMScript.py "Reset Legendary Beasts" -i 0xf26 1 0x00 1 -i 0x10fd 1 0xb1 1
+@py -3 PKSMScript.py "Reset Articuno Moltres and Mewtwo" -i 0x1124 1 0x0f 1
 
 @mkdir hgss
 @move /Y *.pksm hgss
 
 @rem PT SCRIPTS
 @py -3 PKSMScript.py "Clear Mystery Gift data" -i 0xB4C0 1 0x0 2336
+@py -3 PKSMScript.py "Set max money" -i 0x7c 4 999999 1
+@py -3 PKSMScript.py "Set max Battle Points" -i 0x7234 2 9999 1
+@py -3 PKSMScript.py "Set max Underground flags" -i 0x3ce8 4 999999 1
 @py -3 PKSMScript.py "Give all items 99x" -i 0x630 648 "data/Pt_AllItems.bin" 1
+@py -3 PKSMScript.py "Give all medicines 99x" -i 0xB4C 152 "data/DPPt_AllMedicines.bin" 1
+@py -3 PKSMScript.py "Give all battle items 99x" -i 0xD28 52 "data/DPPt_AllBattleItems.bin" 1
+@py -3 PKSMScript.py "Give all berries 99x" -i 0xBEC 256 "data/DPPt_AllBerries.bin" 1
+@py -3 PKSMScript.py "Give all TM&HM 99x" -i 0x98C 400 "data/DPPt_AllTMHM.bin" 1
+@py -3 PKSMScript.py "Give all pokeballs 99x" -i 0xCEC 60 "data/DPPt_AllPokeballs.bin" 1
 
 @mkdir pt
 @move /Y *.pksm pt
@@ -215,11 +267,11 @@
 @py -3 PKSMScript.py "Reset Darkrai" -i 0x1027 1 0x50 1 -i 0x0e22 1 0x09 1 -i 0x0e23 1 0x12 1
 @py -3 PKSMScript.py "Reset Palkia" -i 0x0ecc 1 0x05 1
 @py -3 PKSMScript.py "Give all items 99x" -i 0x623 644 "data/DP_AllItems.bin" 1
-@py -3 PKSMScript.py "Give all medicines 99x" -i 0xB40 152 "data/DP_AllMedicines.bin" 1
-@py -3 PKSMScript.py "Give all battle items 99x" -i 0xD1C 52 "data/DP_AllBattleItems.bin" 1
-@py -3 PKSMScript.py "Give all berries 99x" -i 0xBE0 256 "data/DP_AllBerries.bin" 1
-@py -3 PKSMScript.py "Give all TM&HM 99x" -i 0x980 400 "data/DP_AllTMHM.bin" 1
-@py -3 PKSMScript.py "Give all pokeballs 99x" -i 0xCE0 60 "data/DP_AllPokeballs.bin" 1
+@py -3 PKSMScript.py "Give all medicines 99x" -i 0xB40 152 "data/DPPt_AllMedicines.bin" 1
+@py -3 PKSMScript.py "Give all battle items 99x" -i 0xD1C 52 "data/DPPt_AllBattleItems.bin" 1
+@py -3 PKSMScript.py "Give all berries 99x" -i 0xBE0 256 "data/DPPt_AllBerries.bin" 1
+@py -3 PKSMScript.py "Give all TM&HM 99x" -i 0x980 400 "data/DPPt_AllTMHM.bin" 1
+@py -3 PKSMScript.py "Give all pokeballs 99x" -i 0xCE0 60 "data/DPPt_AllPokeballs.bin" 1
 
 @mkdir dp
 @move /Y *.pksm dp
