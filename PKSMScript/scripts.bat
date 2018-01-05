@@ -218,6 +218,9 @@
 @py -3 PKSMScript.py "Set max money" -i 0x21200 4 9999999 1
 @py -3 PKSMScript.py "Inject living dex" -i 0x00400 4080 "data/living5/boxdata BOX 1.bin" 1 -i 0x01400 4080 "data/living5/boxdata BOX 2.bin" 1 -i 0x02400 4080 "data/living5/boxdata BOX 3.bin" 1 -i 0x03400 4080 "data/living5/boxdata BOX 4.bin" 1 -i 0x04400 4080 "data/living5/boxdata BOX 5.bin" 1 -i 0x05400 4080 "data/living5/boxdata BOX 6.bin" 1 -i 0x06400 4080 "data/living5/boxdata BOX 7.bin" 1 -i 0x07400 4080 "data/living5/boxdata BOX 8.bin" 1 -i 0x08400 4080 "data/living5/boxdata BOX 9.bin" 1 -i 0x09400 4080 "data/living5/boxdata BOX 10.bin" 1 -i 0x0A400 4080 "data/living5/boxdata BOX 11.bin" 1 -i 0x0B400 4080 "data/living5/boxdata BOX 12.bin" 1 -i 0x0C400 4080 "data/living5/boxdata BOX 13.bin" 1 -i 0x0D400 4080 "data/living5/boxdata BOX 14.bin" 1 -i 0x0E400 4080 "data/living5/boxdata BOX 15.bin" 1 -i 0x0F400 4080 "data/living5/boxdata BOX 16.bin" 1 -i 0x10400 4080 "data/living5/boxdata BOX 17.bin" 1 -i 0x11400 4080 "data/living5/boxdata BOX 18.bin" 1 -i 0x12400 4080 "data/living5/boxdata BOX 19.bin" 1 -i 0x13400 4080 "data/living5/boxdata BOX 20.bin" 1 -i 0x14400 4080 "data/living5/boxdata BOX 21.bin" 1 -i 0x15400 4080 "data/living5/boxdata BOX 22.bin" 1 -i 0x16400 4080 "data/living5/boxdata BOX 23.bin" 1 -i 0x17400 4080 "data/living5/boxdata BOX 24.bin" 1
 @py -3 PKSMScript.py "Set max Battle Points" -i 0x21D00 2 9999 1
+@py -3 PKSMScript.py "Reset Victini" -i 0x20222 1 0x02 1 -i 0x204ee 1 0xd2 1 -i 0x204ef 1 0x5b 1 -i 0x23f5a 1 0xd2 1 -i 0x23f5b 1 0x5b 1
+@py -3 PKSMScript.py "Reset Darmanitan" -i 0x203ce 1 0x7f 1 -i 0x203cf 1 0x30 1 -i 0x204ee 1 0x65 1 -i 0x204ef 1 0xa4 1 -i 0x23f5a 1 0x65 1 -i 0x23f5b 1 0xa4 1
+@py -3 PKSMScript.py "Reset Fossil Choice" -i 0x2038e 1 0x04 1 -i 0x204ee 1 0x17 1 -i 0x204ef 1 0xdd 1 -i 0x23f5a 1 0x17 1 -i 0x23f5b 1 0xdd 1
 
 @mkdir bw
 @move /Y *.pksm bw
@@ -237,6 +240,7 @@
 @py -3 PKSMScript.py "Unlock all Pokewalker Courses" -i 0xE70C 1 0xFF 3 -i 0xE70F 1 0x07 1
 @py -3 PKSMScript.py "Reset Legendary Beasts" -i 0xf26 1 0x00 1 -i 0x10fd 1 0xb1 1
 @py -3 PKSMScript.py "Reset Articuno Moltres and Mewtwo" -i 0x1124 1 0x0f 1
+@py -3 PKSMScript.py "Set max Game Corner coins" -i 0x84 2 50000 1
 
 @mkdir hgss
 @move /Y *.pksm hgss
@@ -252,6 +256,9 @@
 @py -3 PKSMScript.py "Give all berries 99x" -i 0xBEC 256 "data/DPPt_AllBerries.bin" 1
 @py -3 PKSMScript.py "Give all TM&HM 99x" -i 0x98C 400 "data/DPPt_AllTMHM.bin" 1
 @py -3 PKSMScript.py "Give all pokeballs 99x" -i 0xCEC 60 "data/DPPt_AllPokeballs.bin" 1
+@py -3 PKSMScript.py "Set 32 people met Underground" -i 0x3cb4 2 32 1
+@py -3 PKSMScript.py "Set max Game Corner coins" -i 0x88 2 50000 1
+@py -3 PKSMScript.py "Get all Pokewatch apps" -i 0x1161 1 25 1 -i 0x1163 1 1 25 -i 0x1184 1 1 1
 
 @mkdir pt
 @move /Y *.pksm pt
@@ -272,6 +279,8 @@
 @py -3 PKSMScript.py "Give all berries 99x" -i 0xBE0 256 "data/DPPt_AllBerries.bin" 1
 @py -3 PKSMScript.py "Give all TM&HM 99x" -i 0x980 400 "data/DPPt_AllTMHM.bin" 1
 @py -3 PKSMScript.py "Give all pokeballs 99x" -i 0xCE0 60 "data/DPPt_AllPokeballs.bin" 1
+@py -3 PKSMScript.py "Set 32 people met Underground" -i 0x3a2c 2 32 1
+@py -3 PKSMScript.py "Set max Game Corner coins" -i 0x84 2 50000 1
 
 @mkdir dp
 @move /Y *.pksm dp
